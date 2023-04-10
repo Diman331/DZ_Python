@@ -4,4 +4,4 @@ lenght = len(wk) - int(wk[0])
 if(day <= 0 or day > lenght):
     print('Нет такого дня недели')
 else:
-    print(wk[day])
+    print(f'{day} -> {wk[day]}')
