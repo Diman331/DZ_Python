@@ -28,3 +28,18 @@ with open('file1.txt', 'r') as f1, open('file2.txt', 'r') as f2:
     result = sum_polynomials(poly1, poly2)
     # выводим результат в консоль
     print(result)
+
+
+degree = len(result) - 1
+
+terms = []
+
+for i, coeff in enumerate(result):
+    if coeff != 0:
+        power = degree - i
+        term = f"{coeff}x^{power}"
+        terms.append(term)
+
+polynomial = " + ".join(terms)
+
+print(polynomial)
