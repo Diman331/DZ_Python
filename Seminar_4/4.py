@@ -1,3 +1,8 @@
+import os
+os.chdir('n:/VS_Code_projects/Python/DZ/Seminar_4/') 
+# Строки 1 и 2 закоментировать или 2 строку исправить на свой путь до фаилов file1.txt и file2.txt
+#(у меня не захотел читать файлы лежащие рядом)
+
 def sum_polynomials(poly1, poly2):
     """
     Функция принимает два списка коэффициентов многочлена в порядке убывания степеней переменной,
@@ -15,7 +20,7 @@ def sum_polynomials(poly1, poly2):
     return result
 
 # открываем файлы и считываем данные
-with open('n:/VS_Code_projects/Python/DZ/Seminar_4/file1.txt', 'r') as f1, open('n:/VS_Code_projects/Python/DZ/Seminar_4/file2.txt', 'r') as f2:
+with open('file1.txt', 'r') as f1, open('file2.txt', 'r') as f2:
     # считываем коэффициенты многочленов в списки
     poly1 = [int(coeff) for coeff in f1.readline().strip().split()]
     poly2 = [int(coeff) for coeff in f2.readline().strip().split()]
