@@ -62,7 +62,6 @@ def player_choice(board):
     return position
 
 # Функция компьютерного хода
-# Функция компьютерного хода (продолжение)
 def computer_choice(board, computer_marker):
     for i in range(1, 10):
         if space_check(board, i):
