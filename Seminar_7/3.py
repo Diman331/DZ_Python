@@ -1,7 +1,7 @@
 import telebot
 import random
 
-bot = telebot.TeleBot("6050276726:AAEgKhkqz6TSoW7CD5hGrCk4Ic0yWbdn1Xc")
+bot = telebot.TeleBot("ваш_токен")
 
 # Глобальная переменная для хранения загаданного числа
 secret_number = random.randint(1, 1000)
