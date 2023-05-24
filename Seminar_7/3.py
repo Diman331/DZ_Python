@@ -3,10 +3,8 @@ import random
 
 bot = telebot.TeleBot("ваш_токен")
 
-# Глобальная переменная для хранения загаданного числа
 secret_number = random.randint(1, 1000)
 
-# Глобальная переменная для хранения количества ходов
 guesses = 0
 
 @bot.message_handler(commands=['start'])
